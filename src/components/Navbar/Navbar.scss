@@ -1,0 +1,29 @@
+.navbar {
+  box-sizing: border-box;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 60px;
+}
+.menu_section {
+  display: flex;
+  gap: 30px;
+}
+.user_img {
+  border-radius: 100%;
+}
+.user_menu {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  > div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.greeting_text {
+  color: #c0c3c6;
+  font-size: small;
+}

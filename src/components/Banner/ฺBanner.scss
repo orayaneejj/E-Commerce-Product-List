@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+.banner {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 287px;
+  padding: 0px 150px;
+  background-image: linear-gradient(to right top, #f4e8f3, #f3eff6, #eee0f9);
+  > div {
+    padding-top: 50px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    width: 500px;
+  }
+  color: $secondary-color;
+}
