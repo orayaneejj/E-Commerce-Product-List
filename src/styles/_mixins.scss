@@ -1,3 +1,5 @@
+@use "sass:color";
+
 @mixin button-style($bg-color, $text-color, $pt: auto, $px: auto) {
   background-color: $bg-color;
   color: $text-color;
@@ -6,6 +8,18 @@
   border: none;
 
   &:hover {
-    background-color: lighten($bg-color, 10%);
+    background-color: color.mix(white, $bg-color, 10%);
   }
+}
+
+@mixin amount-style {
+  align-items: end;
+  color: #4f547b;
+  font-size: 14px;
+}
+
+@mixin filter-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }

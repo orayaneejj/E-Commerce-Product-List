@@ -1,21 +1,27 @@
 {
   "compilerOptions": {
+    "types": ["node"],
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "target": "ESNext", // ปรับจาก ES2020 เป็น ESNext
+    "target": "ESNext",
     "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext", // ปรับให้ตรงกับคำแนะนำ
-    "moduleResolution": "Bundler", // ปรับให้ตรงกับคำแนะนำ
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "skipLibCheck": true,
 
-    /* Bundler mode */
+    /* Path Aliases */
+    "baseUrl": "./", 
     "paths": {
-      "@/*": ["./src/*"] // เพิ่ม paths ตามคำแนะนำ
+      "@/*": ["src/*"]
     },
+
+    /* Bundler Optimizations */
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
+    "resolveJsonModule": true, 
+    "esModuleInterop": true, 
     "jsx": "react-jsx",
 
     /* Linting */
@@ -23,7 +29,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedIndexedAccess": true
   },
   "include": ["src"]
 }

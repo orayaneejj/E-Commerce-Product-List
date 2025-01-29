@@ -1,0 +1,11 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.button-secondary {
+  @include button-style($secondary-color, $text-color, 25px, 40px);
+  font-weight: 700;
+}
+.button-clear {
+  @include button-style(#ffffff, #726c6c, 8px, 25px);
+  border: solid 1px #e4e4e4;
+}

@@ -1,0 +1,27 @@
+@use "../../styles/mixins" as *;
+
+.filter-sidebar {
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  &__checkbox {
+    @include filter-column;
+  }
+  &__amount {
+    @include amount-style;
+  }
+}

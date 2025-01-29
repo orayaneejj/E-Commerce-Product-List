@@ -1,7 +1,0 @@
-@import "../mixins";
-@import "../variables";
-
-.button-secondary {
-  @include button-style($secondary-color, $text-color, 25px, 40px);
-  font-weight: 700;
-}

@@ -1,6 +1,6 @@
 import { Button } from "@chakra-ui/react";
 import "./ฺBanner.scss";
-import "../../styles/components/_button.scss";
+import "../../styles/components/_buttons.scss";
 import model1 from "../../assets/model1.png";
 export function Banner() {
   return (
